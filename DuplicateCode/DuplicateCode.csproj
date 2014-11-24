@@ -53,8 +53,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClassHierarchy\Original\EmployeeProcess.cs" />
+    <Compile Include="ClassHierarchy\Original\HumanResourcesProcess.cs" />
     <Compile Include="ClassHierarchy\Refactored\Employee.cs" />
+    <Compile Include="ClassHierarchy\Refactored\HumanResources.cs" />
+    <Compile Include="ClassHierarchy\Test\EmployeeTest.cs" />
     <Compile Include="Delegate\Support\IPersonRepository.cs" />
     <Compile Include="Delegate\Test\DelegateTest.cs" />
     <Compile Include="Encapsulation\Original\AddressProcess.cs" />

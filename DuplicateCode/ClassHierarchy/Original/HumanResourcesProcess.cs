@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace DuplicateCode.ClassHierarchy.Original {
-   public class EmployeeProcess {
+   public class HumanResourcesProcess {
       public Decimal GetHourlyRate( Employee employee ) {
          Decimal rate;
          switch ( employee.EmployeeType ) {
