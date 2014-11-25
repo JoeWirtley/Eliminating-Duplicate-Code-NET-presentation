@@ -62,6 +62,19 @@
     <Compile Include="Encapsulation\Original\AddressProcess.cs" />
     <Compile Include="ClassHierarchy\Original\Employee.cs" />
     <Compile Include="Encapsulation\Original\Person.cs" />
+    <Compile Include="Encapsulation\Refactored\Person.cs" />
+    <Compile Include="GenericBaseClass\Original\Statboard.cs" />
+    <Compile Include="GenericBaseClass\Refactored\Statboard.cs" />
+    <Compile Include="GenericBaseClass\Support\StatboardDefinition.cs" />
+    <Compile Include="GenericBaseClass\Refactored\MultiChart.cs" />
+    <Compile Include="GenericBaseClass\Support\IMultiChart.cs" />
+    <Compile Include="GenericBaseClass\Refactored\MultiChartBase.cs" />
+    <Compile Include="GenericBaseClass\Support\Chart.cs" />
+    <Compile Include="GenericBaseClass\Support\IChartSerializer.cs" />
+    <Compile Include="GenericBaseClass\Original\MultiChart.cs" />
+    <Compile Include="GenericBaseClass\Original\MultiChartBase.cs" />
+    <Compile Include="GenericBaseClass\Support\MultichartDefinition.cs" />
+    <Compile Include="GenericBaseClass\Support\IChartDefCommon.cs" />
     <Compile Include="ParentClass\Original\CategoryMenuItemViewModel.cs" />
     <Compile Include="ParentClass\Original\DivisionsMenuItemViewModel.cs" />
     <Compile Include="ParentClass\Support\CategoryListView.cs" />
@@ -84,7 +97,6 @@
     <Compile Include="Delegate\Support\Person.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Encapsulation\Refactored\" />
     <Folder Include="Encapsulation\Test\" />
   </ItemGroup>
   <ItemGroup>
