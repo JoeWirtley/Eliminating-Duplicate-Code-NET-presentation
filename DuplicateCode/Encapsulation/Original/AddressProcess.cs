@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using DuplicateCode.Encapsulation.Support;
 
 namespace DuplicateCode.Encapsulation.Original {
    public class AddressProcess {

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using DuplicateCode.Encapsulation.Support;
 
 namespace DuplicateCode.Encapsulation.Original {
    public class Person {
@@ -12,13 +13,5 @@ namespace DuplicateCode.Encapsulation.Original {
       public string LastName { get; set; }
       public IEnumerable<Address> BusinessAddresses { get; private set; }
       public IEnumerable<Address> PersonalAddresses { get; private set; }
-   }
-
-   public class Address {
-      public string Address1 { get; set; }
-      public string Address2 { get; set; }
-      public string City { get; set; }
-      public string State { get; set; }
-      public string Zip { get; set; }
    }
 }

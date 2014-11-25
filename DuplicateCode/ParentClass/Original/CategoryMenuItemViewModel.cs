@@ -5,7 +5,6 @@ namespace DuplicateCode.ParentClass.Original {
    internal class CategoryMenuItemViewModel: IMenuItemViewModel {
       private readonly DelegateCommand<object> _command;
       private bool _visible = true;
-
       private readonly IRegionManager _regionManager;
 
       public CategoryMenuItemViewModel( IRegionManager regionManager ) {

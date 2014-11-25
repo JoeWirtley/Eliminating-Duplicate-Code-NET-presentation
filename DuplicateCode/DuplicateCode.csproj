@@ -59,9 +59,11 @@
     <Compile Include="ClassHierarchy\Test\EmployeeTest.cs" />
     <Compile Include="Delegate\Support\IPersonRepository.cs" />
     <Compile Include="Delegate\Test\DelegateTest.cs" />
+    <Compile Include="Encapsulation\Support\Address.cs" />
     <Compile Include="Encapsulation\Original\AddressProcess.cs" />
     <Compile Include="ClassHierarchy\Original\Employee.cs" />
     <Compile Include="Encapsulation\Original\Person.cs" />
+    <Compile Include="Encapsulation\Refactored\AddressProcess.cs" />
     <Compile Include="Encapsulation\Refactored\Person.cs" />
     <Compile Include="GenericBaseClass\Original\Statboard.cs" />
     <Compile Include="GenericBaseClass\Refactored\Statboard.cs" />

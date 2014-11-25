@@ -3,9 +3,9 @@ using DuplicateCode.ParentClass.Support;
 
 namespace DuplicateCode.ParentClass.Original {
    internal class LoginMenuItemViewModel: IMenuItemViewModel {
-      private bool _visible = true;
       private readonly IRegionManager _regionManager;
       private readonly DelegateCommand<object> _command;
+      private bool _visible = true;
       private readonly IModalDialogService _modalDialogService;
 
       public LoginMenuItemViewModel( IRegionManager regionManager, IModalDialogService modalDialogService ) {
