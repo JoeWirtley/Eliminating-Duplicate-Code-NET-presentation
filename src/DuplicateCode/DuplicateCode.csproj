@@ -72,6 +72,16 @@
     <Compile Include="Encapsulation\Refactored\AddressProcess.cs" />
     <Compile Include="Encapsulation\Refactored\Person.cs" />
     <Compile Include="Encapsulation\Test\EncapsulationTest.cs" />
+    <Compile Include="ExtensionMethod\Original\MappingProfile.cs" />
+    <Compile Include="ExtensionMethod\Refactored\AutomapperExtensions.cs" />
+    <Compile Include="ExtensionMethod\Refactored\MappingProfile.cs" />
+    <Compile Include="ExtensionMethod\Support\MockAutomapper.cs" />
+    <Compile Include="ExtensionMethod\Support\ViewModel.cs" />
+    <Compile Include="ExtensionMethod\Test\ExtensionMethodTests.cs" />
+    <Compile Include="ExtensionMethod\Original\StringProcess.cs" />
+    <Compile Include="ExtensionMethod\Refactored\StringExtensions.cs" />
+    <Compile Include="ExtensionMethod\Refactored\StringProcess.cs" />
+    <Compile Include="ExtensionMethod\Support\IStringProcess.cs" />
     <Compile Include="GenericBaseClass\Original\Statboard.cs" />
     <Compile Include="GenericBaseClass\Refactored\Statboard.cs" />
     <Compile Include="GenericBaseClass\Support\StatboardDefinition.cs" />
