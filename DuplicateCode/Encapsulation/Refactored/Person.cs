@@ -17,13 +17,16 @@ namespace DuplicateCode.Encapsulation.Refactored {
 
 
    public class Addresses: IEnumerable<Address> {
-      public IEnumerable<Address> BusinessAddresses { get; private set; }
-      public IEnumerable<Address> PersonalAddresses { get; private set; }
+      private readonly List<Address> _businessAddresses;
+      private readonly List<Address> _personalAddresses;
 
       public Addresses() {
-         BusinessAddresses = new List<Address>();
-         PersonalAddresses = new List<Address>();
+         _businessAddresses = new List<Address>();
+         _personalAddresses = new List<Address>();
       }
+
+      public IEnumerable<Address> BusinessAddresses { get { return _businessAddresses; } }
+      public IEnumerable<Address> PersonalAddresses { get { return _personalAddresses; } }
 
       public IEnumerator<Address> GetEnumerator() {
          return BusinessAddresses.Union( PersonalAddresses ).GetEnumerator();
@@ -32,5 +35,14 @@ namespace DuplicateCode.Encapsulation.Refactored {
       IEnumerator IEnumerable.GetEnumerator() {
          return GetEnumerator();
       }
+
+      public void AddPersonalAddress( Address address ) {
+         _personalAddresses.Add( address );
+      }
+
+      public void AddBusinessAddress( Address address ) {
+         _businessAddresses.Add( address );
+      }
+
    }
 }

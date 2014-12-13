@@ -15,7 +15,7 @@ namespace DuplicateCode.Encapsulation.Original {
       public int CountMatchingAddresses( Person person, Func<Address, bool> matchingFunction ) {
          var matchingBusinessAddresses = person.BusinessAddresses.Count( matchingFunction );
 
-         var matchingPersonalAddresses = person.BusinessAddresses.Count( matchingFunction );
+         var matchingPersonalAddresses = person.PersonalAddresses.Count( matchingFunction );
 
          return matchingBusinessAddresses + matchingPersonalAddresses;
       }

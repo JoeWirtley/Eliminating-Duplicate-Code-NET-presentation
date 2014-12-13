@@ -43,6 +43,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,6 +54,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attribute\Original\AccountController.cs" />
+    <Compile Include="Attribute\Refactored\AccountController.cs" />
+    <Compile Include="Attribute\Refactored\DenyInternationalAttribute.cs" />
+    <Compile Include="Attribute\Support\Controller.cs" />
+    <Compile Include="Attribute\Support\MockWebStuff.cs" />
     <Compile Include="ClassHierarchy\Original\HumanResourcesProcess.cs" />
     <Compile Include="ClassHierarchy\Refactored\Employee.cs" />
     <Compile Include="ClassHierarchy\Refactored\HumanResources.cs" />
@@ -65,6 +71,7 @@
     <Compile Include="Encapsulation\Original\Person.cs" />
     <Compile Include="Encapsulation\Refactored\AddressProcess.cs" />
     <Compile Include="Encapsulation\Refactored\Person.cs" />
+    <Compile Include="Encapsulation\Test\EncapsulationTest.cs" />
     <Compile Include="GenericBaseClass\Original\Statboard.cs" />
     <Compile Include="GenericBaseClass\Refactored\Statboard.cs" />
     <Compile Include="GenericBaseClass\Support\StatboardDefinition.cs" />
@@ -77,6 +84,10 @@
     <Compile Include="GenericBaseClass\Original\MultiChartBase.cs" />
     <Compile Include="GenericBaseClass\Support\MultichartDefinition.cs" />
     <Compile Include="GenericBaseClass\Support\IChartDefCommon.cs" />
+    <Compile Include="GenericMethod\Original\XmlProcessor.cs" />
+    <Compile Include="GenericMethod\Refactored\XmlProcessor.cs" />
+    <Compile Include="GenericMethod\Support\PurchaseOrder.cs" />
+    <Compile Include="GenericMethod\Test\GenericMethodTest.cs" />
     <Compile Include="ParentClass\Original\CategoryMenuItemViewModel.cs" />
     <Compile Include="ParentClass\Original\DivisionsMenuItemViewModel.cs" />
     <Compile Include="ParentClass\Support\CategoryListView.cs" />
@@ -98,10 +109,9 @@
     <Compile Include="Delegate\Support\FakeOrm.cs" />
     <Compile Include="Delegate\Support\Person.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Encapsulation\Test\" />
-  </ItemGroup>
-  <ItemGroup>
+    <None Include="Attribute\Test\Readme.md" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
