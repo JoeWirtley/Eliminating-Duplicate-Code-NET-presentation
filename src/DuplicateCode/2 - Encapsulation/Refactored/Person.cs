@@ -28,6 +28,10 @@ namespace DuplicateCode.Encapsulation.Refactored {
       public IEnumerable<Address> BusinessAddresses { get { return _businessAddresses; } }
       public IEnumerable<Address> PersonalAddresses { get { return _personalAddresses; } }
 
+      public IEnumerable<string> GetUniqueStates() {
+         return this.Select( address => address.State ).Distinct();
+      }
+
       public IEnumerator<Address> GetEnumerator() {
          return BusinessAddresses.Union( PersonalAddresses ).GetEnumerator();
       }
