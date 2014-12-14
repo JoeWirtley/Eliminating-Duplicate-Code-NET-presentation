@@ -1,3 +1,5 @@
+# ReSharper Duplicate Finder #
+
 The ReSharper duplicate finder is a part of the 
 
 | Topic                        | Summary                                  | Link                                        |
