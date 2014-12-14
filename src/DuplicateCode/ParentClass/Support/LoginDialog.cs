@@ -1,4 +1,4 @@
-﻿namespace DuplicateCode.ParentClass.Original {
+﻿namespace DuplicateCode.ParentClass.Support {
    internal class LoginDialog {
    }
 }

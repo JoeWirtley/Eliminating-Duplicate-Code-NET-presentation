@@ -7,10 +7,10 @@ namespace DuplicateCode.ParentClass.Refactored {
 
       protected override void Initialize() {
          LaunchesView<CategoryListView>();
-         Text = "Category";
-         ToolTip = "Category";
+         Text = "Categories";
+         ToolTip = "Categories";
          Order = 4;
-         IconName = "user_list_menu_icon";
+         IconName = "categories_menu_icon";
       }
    }
 }

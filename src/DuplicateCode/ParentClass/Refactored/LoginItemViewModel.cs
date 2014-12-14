@@ -1,11 +1,10 @@
-﻿using DuplicateCode.ParentClass.Original;
-using DuplicateCode.ParentClass.Support;
+﻿using DuplicateCode.ParentClass.Support;
 
 namespace DuplicateCode.ParentClass.Refactored {
-   internal class LoginDifferentUserMenuItemViewModel: MenuItemViewModelBase {
+   internal class LoginMenuItemViewModel: MenuItemViewModelBase {
       private readonly IModalDialogService _modalDialogService;
 
-      public LoginDifferentUserMenuItemViewModel( IRegionManager regionManager, IModalDialogService modalDialogService ): base ( regionManager ) {
+      public LoginMenuItemViewModel( IRegionManager regionManager, IModalDialogService modalDialogService ): base( regionManager ) {
          _modalDialogService = modalDialogService;
       }
 
@@ -14,7 +13,7 @@ namespace DuplicateCode.ParentClass.Refactored {
          ToolTip = "Login as a different user";
          Order = 11;
          SeparatorAfter = true;
-         IconName = "user_list_menu_icon";
+         IconName = "login_menu_icon";
       }
 
       protected override bool CanExecute( object arg ) {

@@ -19,7 +19,14 @@ namespace DuplicateCode.ParentClass.Support {
    }
 
    public class DelegateCommand< T > {
+      private readonly Action<T> _onExecute;
+
       public DelegateCommand( Action<T> onExecute, Func<T, bool> canExecute ) {
+         _onExecute = onExecute;
+      }
+
+      public void Execute( T arg ) {
+         _onExecute( arg );
       }
 
       public void RaiseCanExecuteChanged() {

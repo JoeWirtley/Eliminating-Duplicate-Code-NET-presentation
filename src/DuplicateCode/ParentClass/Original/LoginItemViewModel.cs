@@ -46,7 +46,7 @@ namespace DuplicateCode.ParentClass.Original {
       }
 
       public string IconName {
-         get { return "user_list_menu_icon"; }
+         get { return "login_menu_icon"; }
       }
 
       public string NavigationPath {

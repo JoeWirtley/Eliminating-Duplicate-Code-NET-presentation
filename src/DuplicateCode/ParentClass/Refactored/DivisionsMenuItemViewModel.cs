@@ -10,7 +10,7 @@ namespace DuplicateCode.ParentClass.Refactored {
          Text = "Divisions";
          ToolTip = "Divisions";
          Order = 2;
-         IconName = "database_settings_menu_icon";
+         IconName = "divisions_settings_menu_icon";
          SeparatorAfter = true;
       }
    }
