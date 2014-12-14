@@ -1,4 +1,4 @@
 ﻿namespace DuplicateCode.GenericBaseClass.Support {
-   public class Chart {
+   public abstract class VisualObject {
    }
 }

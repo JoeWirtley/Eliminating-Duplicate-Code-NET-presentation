@@ -1,7 +1,7 @@
 ﻿using DuplicateCode.GenericBaseClass.Support;
 
 namespace DuplicateCode.GenericBaseClass.Original {
-   public class Statboard: MultiChartBase {
+   public class Statboard: ChartBase {
       private StatboardDefinition _chartDef;
 
       public Statboard() {
@@ -11,17 +11,13 @@ namespace DuplicateCode.GenericBaseClass.Original {
          _chartDef = chartDef;
       }
 
-      public override IChartDefCommon MultiChartDefinition {
+      public override IChartDefCommon ChartDefinition {
          get { return _chartDef; }
          set { _chartDef = ( StatboardDefinition ) value; }
       }
 
-      protected override MultiChartBase CreateNewInstance() {
+      protected override ChartBase CreateNewInstance() {
          return new Statboard();
-      }
-
-      public override string ChartType {
-         get { return StatboardDefinition.ChartTypeKey; }
       }
 
       public override string Serialize( IChartSerializer chartSerializer ) {

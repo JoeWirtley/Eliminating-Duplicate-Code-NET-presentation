@@ -86,12 +86,12 @@
     <Compile Include="8 - GenericBaseClass\Refactored\Statboard.cs" />
     <Compile Include="8 - GenericBaseClass\Support\StatboardDefinition.cs" />
     <Compile Include="8 - GenericBaseClass\Refactored\MultiChart.cs" />
-    <Compile Include="8 - GenericBaseClass\Support\IMultiChart.cs" />
-    <Compile Include="8 - GenericBaseClass\Refactored\MultiChartBase.cs" />
-    <Compile Include="8 - GenericBaseClass\Support\Chart.cs" />
+    <Compile Include="8 - GenericBaseClass\Support\IChart.cs" />
+    <Compile Include="8 - GenericBaseClass\Refactored\ChartBase.cs" />
+    <Compile Include="8 - GenericBaseClass\Support\VisualObject.cs" />
     <Compile Include="8 - GenericBaseClass\Support\IChartSerializer.cs" />
     <Compile Include="8 - GenericBaseClass\Original\MultiChart.cs" />
-    <Compile Include="8 - GenericBaseClass\Original\MultiChartBase.cs" />
+    <Compile Include="8 - GenericBaseClass\Original\ChartBase.cs" />
     <Compile Include="8 - GenericBaseClass\Support\MultichartDefinition.cs" />
     <Compile Include="8 - GenericBaseClass\Support\IChartDefCommon.cs" />
     <Compile Include="7 - GenericMethod\Original\XmlProcessor.cs" />
