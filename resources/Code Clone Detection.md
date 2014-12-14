@@ -6,6 +6,6 @@ In addition to discovering direct copies, the clone analysis tool can find fragm
 
 The output of the solution wide code clone analysis is a list of clone groups ordered with the highest number of clones at the top:
 
-![Code Clone Analysis Results](images\CodeCloneAnalysisResults.png)
+![Code Clone Analysis Results](images/CodeCloneAnalysisResults.png)
 
 The results include exact matches, strong, medium and weak matches in that order.  When you expand one of the clone groups, you see the files with duplicate code, including the line numbers where the code is duplicated.  You can then double click on the file to navigate to the code in question. 
