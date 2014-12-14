@@ -1,6 +1,6 @@
 ﻿namespace DuplicateCode.GenericMethod.Support {
-   public class PurchaseOrder {
+   public class Invoice {
       public Item[] ItemsOrders { get; set; }
-      public string OrderNumber { get; set; }
+      public string InvoiceNumber { get; set; }
    }
 }

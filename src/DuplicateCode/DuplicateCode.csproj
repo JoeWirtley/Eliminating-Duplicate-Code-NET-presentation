@@ -96,8 +96,11 @@
     <Compile Include="GenericBaseClass\Support\IChartDefCommon.cs" />
     <Compile Include="GenericMethod\Original\XmlProcessor.cs" />
     <Compile Include="GenericMethod\Refactored\XmlProcessor.cs" />
+    <Compile Include="GenericMethod\Support\Invoice.cs" />
+    <Compile Include="GenericMethod\Support\Item.cs" />
     <Compile Include="GenericMethod\Support\PurchaseOrder.cs" />
-    <Compile Include="GenericMethod\Test\GenericMethodTest.cs" />
+    <Compile Include="GenericMethod\Test\GenericMethodInvoiceTest.cs" />
+    <Compile Include="GenericMethod\Test\GenericMethodPurchaseOrderTest.cs" />
     <Compile Include="ParentClass\Original\CategoryMenuItemViewModel.cs" />
     <Compile Include="ParentClass\Original\DivisionsMenuItemViewModel.cs" />
     <Compile Include="ParentClass\Support\CategoryListView.cs" />

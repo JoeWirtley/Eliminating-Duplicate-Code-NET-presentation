@@ -1,12 +1,11 @@
 ﻿using System.Diagnostics;
-using DuplicateCode.GenericMethod.Original;
 using DuplicateCode.GenericMethod.Support;
 using FluentAssertions;
 using NUnit.Framework;
 
 namespace DuplicateCode.GenericMethod.Test {
    [TestFixture]
-   public class GenericMethodTest {
+   public class GenericMethodPurchaseOrderTest {
       private string _purchaseOrderXml;
       private PurchaseOrder _purchaseOrder;
 
@@ -34,18 +33,18 @@ namespace DuplicateCode.GenericMethod.Test {
 
       [Test]
       public void TestOriginalSerialize() {
-         XmlProcessor processor = new XmlProcessor();
+         Original.XmlProcessor processor = new Original.XmlProcessor();
 
          string poXml = processor.SerializePurchaseOrder( _purchaseOrder );
 
          poXml.Should().NotBeEmpty();
-         Debug.Write( poXml  );
+         Debug.Write( poXml );
          // Yes, this is pretty low bar for a passing unit test, but comparing XML is beynod the scope of this project
       }
 
       [Test]
       public void TestOriginalDeserialize() {
-         XmlProcessor processor = new XmlProcessor();
+         Original.XmlProcessor processor = new Original.XmlProcessor();
 
          PurchaseOrder po = processor.DeserializePurchaseOrder( _purchaseOrderXml );
 
@@ -67,7 +66,7 @@ namespace DuplicateCode.GenericMethod.Test {
 
       [Test]
       public void TestRefactoredDeserialize() {
-         XmlProcessor processor = new XmlProcessor();
+         Refactored.XmlProcessor processor = new Refactored.XmlProcessor();
 
          PurchaseOrder po = processor.Deserialize<PurchaseOrder>( _purchaseOrderXml );
 

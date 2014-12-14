@@ -6,7 +6,7 @@ using System.Xml.Serialization;
 
 namespace DuplicateCode.GenericMethod.Refactored {
    public class XmlProcessor {
-      protected T Deserialize< T >( string xml ) {
+      public T Deserialize< T >( string xml ) {
          StringReader stringReader = new StringReader( xml );
          XmlTextReader xmlTextReader = new XmlTextReader( stringReader );
          XmlSerializer xmlSerializer = new XmlSerializer( typeof( T ) );
