@@ -15,6 +15,13 @@ namespace DuplicateCode.GenericMethod.Original {
          return ( ( PurchaseOrder ) ( xmlSerializer.Deserialize( xmlTextReader ) ) );
       }
 
+      public Invoice DeserializeInvoice( string xml ) {
+         StringReader stringReader = new StringReader( xml );
+         XmlTextReader xmlTextReader = new XmlTextReader( stringReader );
+         XmlSerializer xmlSerializer = new XmlSerializer( typeof( Invoice ) );
+         return ( ( Invoice ) ( xmlSerializer.Deserialize( xmlTextReader ) ) );
+      }
+
       public string SerializePurchaseOrder( PurchaseOrder po ) {
          string result = "";
          MemoryStream serializedStream = new MemoryStream();
@@ -27,13 +34,6 @@ namespace DuplicateCode.GenericMethod.Original {
             serializedStream.Close();
          }
          return result;
-      }
-
-      public Invoice DeserializeInvoice( string xml ) {
-         StringReader stringReader = new StringReader( xml );
-         XmlTextReader xmlTextReader = new XmlTextReader( stringReader );
-         XmlSerializer xmlSerializer = new XmlSerializer( typeof( Invoice ) );
-         return ( ( Invoice ) ( xmlSerializer.Deserialize( xmlTextReader ) ) );
       }
 
       public string SerializeInvoice( Invoice po ) {

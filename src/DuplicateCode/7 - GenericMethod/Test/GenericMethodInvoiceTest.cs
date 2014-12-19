@@ -35,10 +35,10 @@ namespace DuplicateCode.GenericMethod.Test {
       public void TestOriginalSerialize() {
          Original.XmlProcessor processor = new Original.XmlProcessor();
 
-         string poXml = processor.SerializeInvoice( _invoice );
+         string invoiceXml = processor.SerializeInvoice( _invoice );
 
-         poXml.Should().NotBeEmpty();
-         Debug.Write( poXml  );
+         invoiceXml.Should().NotBeEmpty();
+         Debug.Write( invoiceXml  );
          // Yes, this is pretty low bar for a passing unit test, but comparing XML is beynod the scope of this project
       }
 
@@ -46,21 +46,21 @@ namespace DuplicateCode.GenericMethod.Test {
       public void TestOriginalDeserialize() {
          Original.XmlProcessor processor = new Original.XmlProcessor();
 
-         Invoice po = processor.DeserializeInvoice( _invoiceXml );
+         Invoice invoice = processor.DeserializeInvoice( _invoiceXml );
 
-         po.Should().NotBeNull();
-         po.ItemsOrders.Should().NotBeEmpty().And.HaveCount( 3 );
-         po.InvoiceNumber.Should().Be( "12345" );
+         invoice.Should().NotBeNull();
+         invoice.ItemsOrders.Should().NotBeEmpty().And.HaveCount( 3 );
+         invoice.InvoiceNumber.Should().Be( "12345" );
       }
 
       [Test]
       public void TestRefactoredSerialize() {
          Refactored.XmlProcessor processor = new Refactored.XmlProcessor();
 
-         string poXml = processor.Serialize( _invoice );
+         string invoiceXml = processor.Serialize( _invoice );
 
-         poXml.Should().NotBeEmpty();
-         Debug.Write( poXml );
+         invoiceXml.Should().NotBeEmpty();
+         Debug.Write( invoiceXml );
          // Yes, this is pretty low bar for a passing unit test, but comparing XML is beynod the scope of this project
       }
 
@@ -68,11 +68,11 @@ namespace DuplicateCode.GenericMethod.Test {
       public void TestRefactoredDeserialize() {
          Refactored.XmlProcessor processor = new Refactored.XmlProcessor();
 
-         Invoice po = processor.Deserialize<Invoice>( _invoiceXml );
+         Invoice invoiceXml = processor.Deserialize<Invoice>( _invoiceXml );
 
-         po.Should().NotBeNull();
-         po.ItemsOrders.Should().NotBeEmpty().And.HaveCount( 3 );
-         po.InvoiceNumber.Should().Be( "12345" );
+         invoiceXml.Should().NotBeNull();
+         invoiceXml.ItemsOrders.Should().NotBeEmpty().And.HaveCount( 3 );
+         invoiceXml.InvoiceNumber.Should().Be( "12345" );
       }
    }
 }
