@@ -36,13 +36,13 @@ namespace DuplicateCode.GenericMethod.Original {
          return result;
       }
 
-      public string SerializeInvoice( Invoice po ) {
+      public string SerializeInvoice( Invoice invoice ) {
          string result = "";
          MemoryStream serializedStream = new MemoryStream();
          try {
             XmlSerializer serializer = new XmlSerializer( typeof( Invoice ) );
             XmlTextWriter serializedTextWriter = new XmlTextWriter( serializedStream, new UTF8Encoding() );
-            serializer.Serialize( serializedTextWriter, po );
+            serializer.Serialize( serializedTextWriter, invoice );
             result = UTF8ByteArrayToString( serializedStream.ToArray() );
          } finally {
             serializedStream.Close();
