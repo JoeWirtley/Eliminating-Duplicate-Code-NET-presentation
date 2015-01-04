@@ -39,7 +39,7 @@ namespace DuplicateCode.GenericMethod.Test {
 
          invoiceXml.Should().NotBeEmpty();
          Debug.Write( invoiceXml  );
-         // Yes, this is pretty low bar for a passing unit test, but comparing XML is beynod the scope of this project
+         // Yes, this is pretty low bar for a passing unit test, but comparing XML is beyond the scope of this project
       }
 
       [Test]
@@ -61,7 +61,7 @@ namespace DuplicateCode.GenericMethod.Test {
 
          invoiceXml.Should().NotBeEmpty();
          Debug.Write( invoiceXml );
-         // Yes, this is pretty low bar for a passing unit test, but comparing XML is beynod the scope of this project
+         // Yes, this is pretty low bar for a passing unit test, but comparing XML is beyond the scope of this project
       }
 
       [Test]
