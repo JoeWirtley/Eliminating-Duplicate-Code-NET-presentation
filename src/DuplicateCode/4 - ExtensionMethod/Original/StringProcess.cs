@@ -5,7 +5,7 @@ namespace DuplicateCode.ExtensionMethod.Original {
    public class StringProcess: IStringProcess {
       public string ReverseString( string source ) {
          if ( string.IsNullOrEmpty( source ) ) {
-            return source ?? null;
+            return source;
          }
          char[] charArray = source.ToCharArray();
          Array.Reverse( charArray );
