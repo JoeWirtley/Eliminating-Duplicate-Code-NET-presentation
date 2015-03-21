@@ -123,7 +123,9 @@
     <Compile Include="5 - Delegate\Support\FakeOrm.cs" />
     <Compile Include="5 - Delegate\Support\Person.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="6 - Attribute\Test\Readme.md" />
     <None Include="packages.config" />
