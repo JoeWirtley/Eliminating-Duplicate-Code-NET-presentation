@@ -11,7 +11,7 @@ code functions the same before and after.
 
 The examples demonstrate the following code duplication patterns.  The
 number in parentheses is the example number corresponding to the specific
-type of duplication:
+type of duplication and the solution used to address it:
 
 ------------------------------------------
 
